@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gcl.demo.control.orderTableControl">
+   <children>
+      <TableView fx:id="tableview" layoutX="64.0" layoutY="76.0" prefHeight="317.0" prefWidth="522.0">
+        <columns>
+          <TableColumn fx:id="ordernum" prefWidth="75.0" text="订单编号" />
+          <TableColumn fx:id="id" prefWidth="75.0" text="菜单编号" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="菜名" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="价格" />
+            <TableColumn fx:id="total" prefWidth="75.0" text="支付金额" />
+            <TableColumn fx:id="num" prefWidth="75.0" text="数量" />
+            <TableColumn fx:id="time" prefWidth="75.0" text="下单时间" />
+        </columns>
+      </TableView>
+      <Label layoutX="201.0" layoutY="14.0" prefHeight="49.0" prefWidth="294.0" text="Hotpot订餐系统" textFill="#99cccc">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="39.0" text="我的订餐记录">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="8.0" layoutY="76.0" prefHeight="317.0" prefWidth="45.0" style="-fx-background-color: #99CCCC;" />
+   </children>
+</AnchorPane>

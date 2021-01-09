@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gcl.demo.control.orderRecordAllControl">
+   <children>
+      <Label layoutX="195.0" layoutY="22.0" text="Hotpop订餐管理系统" textFill="#3aa8c6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="47.0" text="所有订餐记录" />
+      <TableView layoutY="100.0" prefHeight="270.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="account" prefWidth="75.0" text="账号" />
+          <TableColumn fx:id="ordernum" prefWidth="75.0" text="订餐编号" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="菜单编号" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="菜名" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="价格" />
+            <TableColumn fx:id="total" prefWidth="75.0" text="支付金额" />
+            <TableColumn fx:id="num" prefWidth="75.0" text="数量" />
+            <TableColumn fx:id="time" prefWidth="75.0" text="下单时间" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

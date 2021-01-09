@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gcl.demo.control.SystemViewUserCustomer">
+   <children>
+      <Button fx:id="selectOrder" layoutX="139.0" layoutY="28.0" mnemonicParsing="false" onAction="#selectOrderControl" text="订餐记录" />
+      <TableView fx:id="tableview" layoutX="139.0" layoutY="58.0" prefHeight="317.0" prefWidth="447.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="75.0" text="菜单编号" />
+          <TableColumn fx:id="name" prefWidth="75.0" text="菜名" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="价格" />
+            <TableColumn fx:id="num" prefWidth="75.0" text="销售数量" />
+            <TableColumn fx:id="info" prefWidth="75.0" text="顾客评价" />
+            <TableColumn fx:id="checkCol" prefWidth="75.0" text="勾选" />
+        </columns>
+      </TableView>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="订餐">
+            <items>
+                  <MenuItem fx:id="information" mnemonicParsing="false" onAction="#informationControl" text="订单评价" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="我的">
+            <items>
+                  <MenuItem fx:id="selectrecord1" mnemonicParsing="false" onAction="#selectRecordControl" text="个人信息" />
+                  <MenuItem fx:id="updatePassword" mnemonicParsing="false" onAction="#updatePasswordControl" text="修改密码" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="buyFood" layoutX="522.0" layoutY="28.0" mnemonicParsing="false" onAction="#buyfoodControl" text="去结算" />
+      <Label layoutX="259.0" layoutY="13.0" prefHeight="15.0" prefWidth="160.0" text="Hotpop订餐系统" textFill="#cc6699">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
